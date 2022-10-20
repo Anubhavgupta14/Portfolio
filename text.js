@@ -2,6 +2,7 @@
   var words = [
       'Competative Programming',
       'Web Development',
+      'Open Source',
       ], i = 0;
   setInterval(function(){
       $('#changingword').fadeOut(function(){
