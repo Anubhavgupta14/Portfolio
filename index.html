@@ -16,7 +16,10 @@
 <!-- Animation -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
+<body onload="myfunction()">
+    <div id="load">
+        <div style="background-color: white; height: 25vh; width: 100%; position: relative; top: -70px;"></div>
+      </div>
     <nav>
         <ul class="ul h-res">
             <li class="li"><img src="./favicon.png" alt=""></li>
@@ -184,6 +187,14 @@
     <script src="/text.js"></script>
     <script src="./nav_res.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        var preloader = document.getElementById('load');
+        var scroll = document.getElementById('main');
+        function myfunction(){
+            preloader.style.display='none';
+            scroll.style.overflow='scroll';
+        }
+    </script>
     <script>
     VANTA.NET({
   el: "#main",
