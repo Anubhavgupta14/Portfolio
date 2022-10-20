@@ -16,7 +16,7 @@
 <!-- Animation -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body onload="myfunction()">
+<body onload="myfunction()" id="mainsc">
     <div id="load">
         <div style="background-color: white; height: 25vh; width: 100%; position: relative; top: -70px;"></div>
       </div>
@@ -29,7 +29,7 @@
             <li class="li4 res"><a href="">Experience</a></li>
             <li class="li5 res"><a href="#contact">Contact Me</a></li>
         </ul>
-        <div class="burger">
+        <div class="burger" onclick="fun()">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
@@ -189,10 +189,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         var preloader = document.getElementById('load');
-        var scroll = document.getElementById('main');
+        var scroll = document.getElementById('mainsc');
         function myfunction(){
             preloader.style.display='none';
             scroll.style.overflow='scroll';
+        }
+        function fun(){
+            scroll.style.overflow='none';
         }
     </script>
     <script>

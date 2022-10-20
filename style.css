@@ -13,6 +13,9 @@
     background: #fff url(./logo/45124d126d0f0b6d8f5c4d635d466246.gif) no-repeat center;
     z-index: 9999999;
 }
+#mainsc{
+  overflow: hidden;
+}
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
